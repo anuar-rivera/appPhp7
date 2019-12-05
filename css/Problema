@@ -1,0 +1,46 @@
+.problema{
+    grid-area: a1;
+    background-color: rgb(111, 111, 189);
+    color: black;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+.datos{
+    grid-area: a2;
+    background-color: rgb(255, 104, 104);
+    border-radius: 5px;
+    color: black;
+    padding: 0px 10px 0px 10px;
+}
+.formulas{
+    grid-area: a3;
+    background-color: darkcyan;
+    padding: 0px 10px 0px 10px;
+    color: black;
+    border-radius: 5px;
+}
+.calculos{
+    grid-area: a4;
+    background-color: rgb(158, 83, 211);
+    color: black;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+.resultado{
+    grid-area: a5;
+    background-color: rgb(56, 177, 56);
+    color: black;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "a1 a1 a1 a1"
+                         "a2 a2 a3 a3"
+                         "a4 a4 a5 a5";
+    width: 100%;
+    height: 100%;
+}
