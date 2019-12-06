@@ -1,46 +1,69 @@
-.problema{
-    grid-area: a1;
-    background-color: rgb(111, 111, 189);
-    color: black;
-    padding: 0px 10px 0px 10px;
-    border-radius: 5px;
-}
-.datos{
-    grid-area: a2;
-    background-color: rgb(255, 104, 104);
-    border-radius: 5px;
-    color: black;
-    padding: 0px 10px 0px 10px;
-}
-.formulas{
-    grid-area: a3;
-    background-color: darkcyan;
-    padding: 0px 10px 0px 10px;
+#descripcion{
+    padding:0px 10px 0px 10px;
+    grid-area: b1;
+    background-color: #BC3FFA;
     color: black;
     border-radius: 5px;
 }
-.calculos{
-    grid-area: a4;
-    background-color: rgb(158, 83, 211);
+#datos{
+    padding:0px 0px 0px 10px;
+    grid-area: b2;
+    background-color: #FA3731;
     color: black;
-    padding: 0px 10px 0px 10px;
     border-radius: 5px;
 }
-.resultado{
-    grid-area: a5;
-    background-color: rgb(56, 177, 56);
+#formulas{
+    padding:0px 0px 0px 10px;
+    grid-area: b3;
+    background-color: #F06030;
     color: black;
-    padding: 0px 10px 0px 10px;
     border-radius: 5px;
 }
-
+#solucion{
+    padding:0px 0px 0px 10px;
+    grid-area: b4;
+    background-color: #FA31FA;
+    color: BLACK;
+    border-radius: 5px;
+}
+#resultado{
+    padding:0px 0px 0px 10px;
+    grid-area: b5;
+    background-color: #3545E8;
+    color: BLACK;
+    border-radius: 5px;
+}
 #contenedor{
     display: grid;
     grid-template-columns:  repeat(4, [col] 1fr) ;
     grid-template-rows: auto;
-    grid-template-areas: "a1 a1 a1 a1"
-                         "a2 a2 a3 a3"
-                         "a4 a4 a5 a5";
+    grid-template-areas: "a a a a "
+                         "b b b b"
+                         "b b b b"
+                         "b b b b"
+                         "c c c c";
+    width: 100%;
+    height: 100%;  
+}
+ 
+.gridProblema{
+    grid-area: b;  
+}
+#gridHeader{
+    grid-area: a;
+    width: 100%;
+    height: 100px;
+}
+#gridPie{
+    grid-area: c;
+}
+#problema{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b1 b1 b1"
+                         "b2 b2 b3 b3"
+                         "b4 b4 b5 b5";
     width: 100%;
     height: 100%;
 }
